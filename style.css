@@ -32,7 +32,7 @@ a {
  * animation slide-in-blurred-top
  * ----------------------------------------
  */
-@-webkit-keyframes slide-in-blurred-top {
+/* @-webkit-keyframes slide-in-blurred-top {
   0% {
     -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
     transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
@@ -71,4 +71,4 @@ a {
     filter: blur(0);
     opacity: 1;
   }
-}
+} */
