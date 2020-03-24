@@ -1,27 +1,79 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
 body {
-  background-color: #000;
-  background: url("background.jpg") fixed no-repeat;
-  background-size: cover;
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+background: radial-gradient(ellipse at top, #1b2735 30%, #090a0f 100%);/*   
+  display: grid;
+  place-items: center; */
 }
-.text {
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400, 100, 900);
-  font-family: "Roboto", sans-serif;
-  font-size: 36px;
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
-a {
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  text-shadow: 0px 0px 0px white;
-}
-a:hover {
-  text-shadow: 0px 0px 18px white;
-  transition-duration: 0.1s;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #212121;
 }
 
-.video-js {
-  border: 1px solid white;
-  background: #fff; /* Цвет фона */
-  padding: 1px; /* Поля вокруг текста */
-  align-content: center;
+li{
+  width: 639px;
+    text-align: center;
+    font-size: 26px;
+}
+
+table {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px 20px black;
+}
+
+.nav {
+    list-style: none;
+    background-color: white;
+    border-radius: 0;
+    margin-top: -1px;
+}
+a,a:hover,a:focus{
+   transition:all .5s ;
+  color: #212121;
+}
+a:hover,a:focus{
+  color: #212121;
+   transition:all .5s ;
+box-shadow: 0 0 8px 0px #000000;
+}
+.nav>li>a {
+    text-decoration: none;
+    background-color: #eee;
+    list-style: none;
+    border-radius: 0;
+}
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    list-style: none;
+    border-radius: 0;
+}
+
+.nav-pills>li>a>.badge {
+    margin-left: 4px;
+    margin-top: -4px;
+}
+
+
+@media (max-width: 1980px) { 
+.nav {
+    background-color: rgb(0, 0, 0);
+
+  }
 }
