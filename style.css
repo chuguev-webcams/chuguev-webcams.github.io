@@ -99,3 +99,49 @@ li{
     font-size: 53px;
 }
 }
+
+
+/* video-player CHKS */
+
+.video-js .vjs-control-bar { 
+    bottom: 25px !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 42px 42px 42px 42px !important;
+    height: 3em !important;
+    font-size: 18px !important;
+    width: 50em !important;
+    left: 20vh !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    border: white solid 0.55px !important;
+}
+
+.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+    font-size: 24px !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    color: red;
+}
+
+.vjs-big-play-button {
+    font-size: 78px !important;
+    border-radius: 100px !important;
+    border: 0.06666em solid #fff;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 0.3em;
+}
+
+/* video rtsp */
+
+.control_wrapper {
+    position: absolute;
+    width: 84% !important;
+    min-height: 41px !important;
+    background: #212121;
+    left: 85vh !important;
+    bottom: 0px;
+    border-radius: 50px !important;
+    transform: translate(-50%, -50%) !important;
+    background: #0000006e !important;
+}
