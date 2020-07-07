@@ -3,7 +3,7 @@
   <head>
     <title>Chuguev WebCams</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=500, initial-scale=1" /> -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -12,7 +12,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script>
+    $(window).scroll(function () {
+      var wintop = $(window).scrollTop(),
+        docheight = $(document).height(),
+        winheight = $(window).height();
+      var scrolled = (wintop / (docheight - winheight)) * 100;
 
+      $(".scroll-line").css("width", scrolled + "%");
+    });
+  </script>
+  <div class="scroll-line"></div>
   <body>
     <table width="940" align="center">
       <tr>
