@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
   <head>
     <title>Chuguev WebCams</title>
     <meta charset="utf-8" />
@@ -22,17 +22,34 @@
 
       $(".scroll-line").css("width", scrolled + "%");
     });
+
+    $(document).ready(function () {
+      $(".button").click(function () {
+        location.reload(true);
+      });
+    });
+
+    $(document).ready(function () {
+      $('a[data-toggle="tab"]').on("show.bs.tab", function (e) {
+        localStorage.setItem("activeTab", $(e.target).attr("href"));
+      });
+      var activeTab = localStorage.getItem("activeTab");
+      if (activeTab) {
+        $('#myTab a[href="' + activeTab + '"]').tab("show");
+      }
+    });
   </script>
   <div class="scroll-line"></div>
   <body>
-    <table width="940" align="center">
+    <button class="button" type="button">Reload page</button>
+    <table width="940" height="100%" align="center">
       <tr>
         <td width="50%" height="50%">
-          <ul class="nav nav-pills">
-            <li class="active">
+          <ul class="nav nav-pills" id="myTab">
+            <li>
               <a
                 style="border-radius: 25px 0px 0px 0px;"
-                data-toggle="pill"
+                data-toggle="tab"
                 href="#menu1"
               >
                 RTSP.ME
@@ -42,7 +59,7 @@
             <li>
               <a
                 style="border-radius: 0px 25px 0px 0px;"
-                data-toggle="pill"
+                data-toggle="tab"
                 href="#menu2"
                 >CHKS
                 <span class="badge badge-primary badge-pill">10 Cams</span></a
