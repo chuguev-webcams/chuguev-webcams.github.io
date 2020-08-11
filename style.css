@@ -165,24 +165,27 @@ a:focus {
 
 .button {
   position: fixed;
-  bottom: 3rem;
-  left: 30px;
+  bottom: 4rem;
   z-index: 1000;
-  background-color: #6969691f;
+  background-color: #ffffff17;
   border: 0;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
   color: white;
-  padding: 16px 32px;
+  padding: 15px 24px;
   text-align: center;
-  font-size: 16px;
-  opacity: 0.6;
-  transition: 0.3s;
+  font-size: 23px;
+  opacity: 1;
+  transition: 0.5s;
   cursor: pointer;
+  backdrop-filter: blur(10px);
+  transform: translateX(-191px);
 }
 
 .button:hover {
-  opacity: 1;
-  transition: 0.3s;
-  font-size: 17px;
-  transform: scale(1.2);
+  transition: 0.2s;
+  transform: translateX(0px);
+}
+
+.button:active {
+  transform: scale(0.97);
 }
