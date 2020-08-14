@@ -10,11 +10,15 @@ body {
   );
 }
 
+iframe {
+  border: 0;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover {
   color: #fff;
-  background-color: #000;
+  background-color: rgb(34, 34, 34);
   border: white solid 2px;
 }
 
