@@ -22,6 +22,8 @@ iframe {
   border: white solid 2px;
 }
 
+/*  */
+
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
   color: #000000;
