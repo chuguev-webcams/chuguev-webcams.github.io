@@ -81,14 +81,16 @@ a:focus {
 .video-js .vjs-control-bar {
   bottom: 25px !important;
   background-color: rgba(0, 0, 0, 0.26) !important;
-  border-radius: 42px 42px 42px 42px !important;
+  border-top-left-radius: 42px !important;
+  border-top-right-radius: 42px !important;
+  border-bottom-right-radius: 42px !important;
+  border-bottom-left-radius: 42px !important;
   height: 3em !important;
   font-size: 18px !important;
-  width: 50em !important;
-  left: 20vh !important;
+  width: 90% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  border: #8a8a8a50 solid 0.55px !important;
+  border: 0 !important;
   backdrop-filter: saturate(180%) blur(10px);
 }
 
