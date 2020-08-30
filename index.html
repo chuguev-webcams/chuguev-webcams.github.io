@@ -14,13 +14,19 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <div class="scroll-line"></div>
   <body>
+    <!-- ScrollBar -->
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <!-- Refresh button -->
     <button class="button" type="button">🔄 Reload page</button>
+    <!-- Start table -->
     <table width="940" height="100%" align="center">
       <tr>
         <td width="50%" height="50%">
+          <!--  -->
           <ul class="nav nav-pills" id="myTab">
+            <!-- Tab 1 -->
             <li>
               <a
                 style="border-radius: 25px 0px 0px 0px"
@@ -31,6 +37,7 @@
                 <span class="badge badge-primary badge-pill">14 Cams</span>
               </a>
             </li>
+            <!-- Tab 2 -->
             <li>
               <a
                 style="border-radius: 0px 25px 0px 0px"
@@ -40,8 +47,11 @@
                 <span class="badge badge-primary badge-pill">10 Cams</span></a
               >
             </li>
+            <!-- End tabs -->
           </ul>
+          <!--  -->
           <div class="tab-content">
+            <!-- Menu 1 -->
             <div id="menu1" class="tab-pane fade in active">
               <div class="videos">
                 <iframe
@@ -151,6 +161,7 @@
                 ></iframe>
               </div>
             </div>
+            <!-- Menu 2 -->
             <div id="menu2" class="tab-pane fade">
               <div class="videos">
                 <!-- <video id="my_video_TEST" class="video-js vjs-default-skin vjs-big-play-centered" controls
@@ -317,13 +328,7 @@
                 </video>
               </div>
             </div>
-            <!-- <div id="menu3" class="tab-pane fade">
-                        <h3>Menu 3</h3>
-                        <p>
-                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.
-                        </p>
-                    </div> -->
+            <!-- End menu 2 -->
           </div>
         </td>
       </tr>
