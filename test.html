@@ -11,24 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="SmoothScroll.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <script>
-    $(window).scroll(function () {
-      var wintop = $(window).scrollTop(),
-        docheight = $(document).height(),
-        winheight = $(window).height();
-      var scrolled = (wintop / (docheight - winheight)) * 100;
-
-      $(".scroll-line").css("width", scrolled + "%");
-    });
-
-    $(document).ready(function () {
-      $(".button").click(function () {
-        location.reload(true);
-      });
-    });
-  </script>
   <div class="scroll-line"></div>
   <style>
     h1 {
@@ -48,9 +33,9 @@
       <tr>
         <td width="50%" height="50%">
           <ul class="nav nav-pills">
-            <li class="active" style="width: 100% !important;">
+            <li class="active" style="width: 100% !important">
               <a
-                style="border-radius: 25px 25px 0px 0px;"
+                style="border-radius: 25px 25px 0px 0px"
                 data-toggle="pill"
                 href="#menu1"
               >
