@@ -189,10 +189,10 @@ a:focus {
 ::selection {
   background-color: #673ab7;
 }
-
+/* 
 .button {
   position: fixed;
-  bottom: 4rem;
+  top: 85%;
   z-index: 1000;
   background-color: #ffffff17;
   border: 0;
@@ -200,12 +200,26 @@ a:focus {
   color: white;
   padding: 15px 24px;
   text-align: center;
-  font-size: 23px;
   opacity: 1;
   transition: 0.2s;
   cursor: pointer;
   backdrop-filter: blur(10px);
   transform: translateX(-191px);
+  transition-delay: 1s;
+}
+
+.button {
+  font-size: 25px;
+}
+@media (max-width: 1000px) {
+  .button {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .button {
+    font-size: 25px;
+  }
 }
 
 .button:hover {
@@ -215,4 +229,4 @@ a:focus {
 
 .button:active {
   transform: scale(0.97);
-}
+} */
